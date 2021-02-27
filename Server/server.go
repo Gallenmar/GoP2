@@ -36,14 +36,14 @@ func handleConnection(con *net.UDPConn) {
 	buff := bytes.NewReader(buf[0:n])
 
 	var data struct {
-		L float64
-		Cnt int32
+		X int32
+		Y int32
 	}
 	err = binary.Read(buff, binary.LittleEndian, &data)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	
+
 	fmt.Println(data)
 }

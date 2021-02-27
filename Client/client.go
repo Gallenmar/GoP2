@@ -15,11 +15,11 @@ func main() {
 	}
 
 	var data struct {
-		L float64
-		Cnt int32
+		X int32
+		Y int32
 	}
-	data.L = 325.54
-	data.Cnt = 34
+	data.X = 6
+	data.Y = 12
 
 	var buf bytes.Buffer
 	err = binary.Write(&buf, binary.LittleEndian, data)
