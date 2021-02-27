@@ -15,8 +15,8 @@ func main() {
 	}
 
 	var data struct {
-		X int32
-		Y int32
+		X int
+		Y int
 	}
 	data.X = 6
 	data.Y = 12
